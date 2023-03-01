@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>decision making</title>
+    </head>
+    <body>
+        <h1><u>2)Decision making</u></h1></br>
+        <p><h1>i)Calculator</h1></br>Write a program to make a simple calculator using switch statement that takes operator and two numbers from user and print the result after operation.<b>Note</b>: You have to complete <b>Calculator</b>. No need to take any input</p>
+        <p><h1>Input Format</h1></br>The input contains a operator symbol (+,−,∗,/) along with two natural numbers B and C.</p>
+        <p><h1>Output Format</h1></br>Return the required result.</p>
+        <p><h1>Constraints</h1></br>1 ≤ B,C ≤ 1000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>+ 1 2</br>Sample Output</br>3</p>
+        <p>CODE</p>
+        <p>const Calculator = (A, B, C) =></br>{switch(A){</br>case "+":return B+C;</br>case "-":return B-C;</br>case "*":return B*C;</br>case "/":return B/C;</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>+ 1 2</br>Output</br>3</p><hr>
+
+        <p><h1>ii)Check whether the condition is fulfilled or not?</h1></br>Write a program that takes a number and prints whether the number is divisible by 6 and 9 or not.<b></br>Note</b>: You have to complete <b>Check_divisibility</b>. No need to take any input</p>
+        <p><h1>Input Format</h1></br>The input contains a single number N.</p>
+        <p><h1>Output Format</h1></br>If the condition is satisfied return "Divisible by both" (without quotes) else return "Not Divisible by both" (without quotes). </p>
+        <p><h1>Constraints</h1></br>1 ≤ N ≤ 10000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input 1</br>36</br>Sample Output 1</br>Divisible by both</br>Sample Input 2</br>27</br>Sample Output 2</br>Not Divisible by both</p>
+        <p>CODE</p>
+        <p>const Check_divisibility = (N) => {</br>if(N%6===0 && N%9===0){</br>return "Divisible by both";</br>}</br>else{</br>return "Not Divisible by both";/br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input 1</br>36</br>Output 1</br>Divisible by both</br>Input 2</br>27</br>Output 2</br>Not Divisible by both</p><hr>
+
+        <p><h1>iii)Eligible Voter</h1></br>You are given an integer A,denoting the age of a person, and your task is to determine whether he/she is eligible to vote or not.</br><b>Note</b>: You have to complete <b>isEligible function</b>. No need to take any input</p>
+        <p><h1>Input Format</h1></br>The first and the only line of the input contains an integer A,representing the age of a person.</p>
+        <p><h1>Output Format</h1></br>If the person is eligible to vote, return "Eligible for Voting" otherwise, return "Not Eligible for Voting" (without quotes).</p>
+        <p><h1>Constraints</h1></br>0 ≤ A ≤ 120</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>13</br>Sample Output</br>Not Eligible for Voting</p>
+        <p>CODE</p>
+        <p>const isEligible = (a) => {</br>if(a>=18){
+        </br>return "Eligible for Voting";</br>}</br>else{</br>return "Not Eligible for Voting";</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>13</br>Output</br>Not Eligible for Voting</p><hr>
+
+        <p><h1>iv)Find Relation</h1></br>PrepBuddy wants you to get familiar with various Relational operators. He provides you with two integer values X and  Y and asks you to find the relation between them.</br>The relationships between integers X and Y are as follows:</br>If X < Y, it means that X is smaller than Y.</br>If X > Y, it means that X is greater than Y.</br>If X = Y, it means that X is equal to Y.</br><b>Note</b>: You have to complete <b>findRelationship function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first and the only line of the input contains two space-separated integers X and Y, denoting the integers which PrepBuddy gives you.</p>
+        <p><h1>Output Format</h1></br>Return the relationship between the integers that PrepBuddy gave you.</p>
+        <p><h1>Constraints</h1></br>1 ≤ X,Y ≤ 500</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>3 11</br>Sample Output</br>3 is smaller than 11</p>
+        <p>CODE</p>
+        <p>const findRelation = (x,y) => {</br>if(x<y){</br>return x+" is smaller than "+y;</br>}</br>else if(x>y){</br>return x+" is greater than "+y;</br>}</br>else{</br>return x+" is equal to "+y;</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>3 11</br>Output</br>3 is smaller than 11</p><hr>
+
+        <p><h1>v)Find Grades</h1>Your school has the following grading system based upon the marks(M) obtained by a student:</br>If M ≤ 10, the grade will be E.</br>If 11 ≥ M ≤ 20, the grade will be  D.</br>If 21 ≥ M ≤ 30, the grade will be  C.</br>If 31 ≥ M ≤ 40, the grade will be B.</br>If 41 ≥ M ≤ 50, the grade will be A.</br>Your friend will enter his marks out of 50, and your task is to print his grades using a switch statement.</br><b>Note</b>: You have to complete <b>findGrades function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1>The first and the only line of the input contains an integer M, representing the marks that your friend will enter in the grading system.</p>
+        <p><h1>Output Format</h1>Return the grade obtained by your friend.</p>
+        <p><h1>Constraints</h1>0 ≤ M ≤ 50</p>
+        <p><h1>Time Limit</h1>1 second</p>
+        <p><h1>Example</h1>Sample Input</br>1</br>Sample Output</br>E</p>
+        <p>CODE</p>
+        <p>const findGrades = (a) => {</br>switch(true){</br>case a<=10:return "E";</br>case a>=11&&a<=20:return "D";</br>case a>=21&&a<=30:return "C";</br>case a>=31&&a<=40:return "B";</br>case a>=41&&a<=50:return "A";</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>1</br>Output</br>E</p><hr>
+
+        <p><h1>vi)Get value</h1></br>You are provided with a table containing some characters and their corresponding values. Your task will be to find the value from the table corresponding to an input character and return it.</br>| P or p 	- PrepBytes      	|</br>| Z or z 	- Zenith         	|</br>| E or e 	- Expert Coder   	|</br>| D or d 	- Data Structure 	|</br><b>Note</b>: You have to complete <b>getValue function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first and the only line of the input contains a character C, representing the character that you will get in input.</p>
+        <p><h1>Output Format</h1></br>Return the value corresponding to the input character.</p>
+        <p><h1>Constraints</h1></br>C will be one of the following characters: [P,p,Z,z,E,e,D,d].</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>E</br>Sample Output</br>Expert Coder</p>
+        <p>CODE</p>
+        <p>const getValue = (a) => {</br>if((a==="P")||(a==="p")){</br>return "PrepBytes";</br>}</br>else if((a==="Z")||(a==="z")){</br>return "Zenith";</br>}</br>else if((a==="E")||(a==="e")){</br>return "Expert Coder";</br>}</br>else if((a==="D")||(a==="d")){</br>return "Data Structure";</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>E</br>Output</br>Expert Coder</p><hr>
+
+        <p><h1>vii)Find the maximum out of three numbers.</h1></br>Take three numbers and print the largest number among them if all of three are same print −1.</br><b>Note</b>: You have to complete <b>Max_out_of_three</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The input contains three numbers A,B and C.</p>
+        <p><h1>Output Format</h1></br>Return the maximum number out of the three numbers as result.</p>
+        <p><h1>Constraints</h1></br>1 ≤ A,B,C ≤ 10000</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>2 5 4</br>Sample Output</br>5</p>
+        <p>CODE</p>
+        <p>const Max_out_of_three = (A,B,C) => {</br>if ((A > B) && (A>C)){</br>return A;</br>} </br>else if((B>A) && (B>C)){</br>return B;</br>}</br>else if((A>C) && (C>B)){</br>return C;</br>}</br>else{</br>return -1;</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>2 5 4</br>Output</br>5</p><hr>
+        
+        <p><h1>viii)Second Smallest</h1></br>You are given 3 distinct integers X,Y,and Z,and your task is to find and return the second smallest integer among the three provided integers.</br><b>Note</b>: You have to complete <b>findSndSmallest function</b>. No need to take any input.</p>
+        <p><h1>Input Format</h1></br>The first and the only line of the input contains three space-separated integers X,Y, and Z, denoting the integers among which you have to find the second smallest element.</p>
+        <p><h1>Output Format</h1></br>Return the second smallest integer among the three integers given to you.</p>
+        <p><h1>Constraints</h1></br>1 ≤ X,Y,Z ≤ 500</br>X! = Y,  Y! = Z,  X! = Z</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>2 9 23</br>Sample Output</br>9</p>
+        <p>CODE</p>
+        <p>const findSndSmallest = (x,y,z) => {</br>if((x>y && x<z) || (x<y && x>z)){</br>return x;</br>}</br>else if((y>x && y<z) || (y<x && y>z)){</br>return y;</br>}</br>else{</br>return z;</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>2 9 23</br>Output</br>9</p><hr>
+
+        <p><h1>ix)Check whether the triangle is Acute or Obtuse</h1></br>Write a program takes takes three angles and checks whether the triangle is acute or obtuse.</br><b>Note</b>: You have to complete <b>Triangle_Check</b>. No need to take any input</p>
+        <p><h1>Input Format</h1></br>The input contains three numbers A,B and C which denotes the angles of a triangle.</p>
+        <p><h1>Output Format</h1></br>Return the required result.</p>
+        <p><h1>Constraints</h1></br>0 ≤ A,B,C ≤ 180</p>
+        <p><h1>Time Limit</h1></br>1 second</p>
+        <p><h1>Example</h1></br>Sample Input</br>60 100 20</br>Sample Output</br>obtuse</p>
+        <p>CODE</p>
+        <p>const Triangle_Check = (A,B,C) => {</br>if(A<90 && B<90 && C<90){</br>return "acute";</br>}</br>else if(A>90 || B>90 || C>90){</br>return "obtuse";</br>}</br>};</p>
+        <p>OUTPUT</p>
+        <p>Input</br>60 100 20</br>Output</br>obtuse</p><hr>
+        
+
+
+
+
+        </body>
+
+
+
+
+    </html>
